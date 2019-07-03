@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: sans-serif;
+}
+/*-------------site-blocks-cover----------------*/
+.site-blocks-cover {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background: #f9f9f9;
+	position: relative;
+	overflow: hidden;
+	z-index: 9;
+}
+/*-------navbar-------*/
+a {
+	color: black !important;
+}
+
+a:hover {
+	color: burlywood !important;
+}
+.navbar-toggler-icon {
+	color: black;
+}
+/*------featured-categories------*/
+.featured-categories {
+	margin: 50px 0;
+}
+.featured-categories img {
+	width: 100%;
+	padding: 20px 0;
+	transition: 1s;
+	cursor: pointer;
+}
+.featured-categories img:hover {
+	transform: scale(1.1);
+}
+/*section-1*/
+.section-1 {
+	padding: 20vmin 0vmin;
+	background: #f9f9f9;
+}
+
+.section-1 .row .col-md-6 .pray img {
+	opacity: 0.8;
+	width: 80%;
+	border-radius: 0.2em;
+}
+
+.section-1 .row .col-md-6:last-child {
+	position: relative;
+}
+
+.section-1 .row .col-md-6 .panel {
+	position: absolute;
+	top: 7vmin;
+	left: -18vmin;
+	background: white;
+	border-radius: 3px;
+	text-align: left;
+	padding: 13vmin 5vmin 20vmin 10vmin;
+	box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+	font-family: var(--Rubik);
+	z-index: 1;
+}
+
+.section-1 .row .col-md-6 .panel h1 {
+	font-weight: bold;
+	padding: 0.4em 0;
+	font-size: 2em;
+}
+
+.section-1 .row .col-md-6 .panel p {
+	font-size: 0.9em;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.section-1 .row .col-md-6 .panel {
+	position: initial;
+	width: initial;
+	height: initial;
+}
+
+.title-box::after {
+	margin-top: -4px;
+	margin-left: 170px;
+}
+/*-------------product-top CSS----------------*/
+.product-top img {
+	width: 100%;
+}
+.overlay-right {
+	display: block;
+	opacity: 0;
+	position: absolute;
+	top: 10%;
+	margin-left: 0;
+	width: 70px;
+}
+.overlay-right .fa {
+	cursor: pointer;
+	overflow: hidden;
+	background-color: #fff;
+	color: #000;
+	height: 35px;
+	width: 35px;
+	font-size: 20px;
+	padding: 7px;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.overlay-right .btn-secondary {
+	background: none !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+.product-top:hover .overlay-right {
+	opacity: 1;
+	margin-left: 5%;
+	transition: 0.5s;
+}
+/*--------------Product-bottom-CSS---------------*/
+
+.product-bottom .fa {
+	color: #9edcd7;
+	font-size: 10px;
+}
+.product-bottom h3 {
+	font-size: 20px;
+	font-weight: bold;
+}
+.product-bottom h5 {
+	font-size: 15px;
+	padding-bottom: 10px;
+}
+.new-products {
+	margin: 50px 0;
+}
+/*-------------bracelets page----------------*/
+.carousel-inner img {
+	width: 100%; /* Set width to 100% */
+	margin: auto;
+	min-height: 200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+	.carousel-caption {
+		display: none;
+	}
+}
