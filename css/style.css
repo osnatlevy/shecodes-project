@@ -18,13 +18,36 @@ body {
 /*-------navbar-------*/
 a {
 	color: black !important;
+	transition: all 1s ease-in-out;
 }
-
 a:hover {
 	color: burlywood !important;
 }
-.navbar-toggler-icon {
+.btn-outline-secondary:hover {
+	color: #fff !important;
+}
+.navbar-toggler {
+	outline: none !important;
+}
+
+.cart-info__icon {
 	color: black;
+	cursor: pointer;
+}
+.cart-info {
+	border: 0.1rem solid black;
+	color: black;
+	border-radius: 0.25rem;
+	padding: 0.4rem 0.6rem;
+	cursor: pointer;
+}
+.cart-info:hover {
+	background: #9edcd7;
+	color: #fff;
+	border: #fff;
+}
+.cart-info:hover .cart-info__icon {
+	color: #fff;
 }
 /*------featured-categories------*/
 .featured-categories {
